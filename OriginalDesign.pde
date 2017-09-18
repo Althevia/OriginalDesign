@@ -15,16 +15,13 @@ void draw()
   if (turtie == false)
   {
     turtie = true;
-    Random rand3 = new Random();
-    int turt = rand3.nextInt(400) + 1;
+    int turt = (int)(Math.random()*400 + 1);
     turtle(turt);
   }
   while (count<20)
   {
-    Random rand = new Random();
-    int  x = rand.nextInt(500) + 1;
-    Random rand2 = new Random();
-    int  y = rand2.nextInt(450) + 1;
+    int  x = (int)(Math.random()*500 + 1);
+    int  y = (int)(Math.random()*450 + 1);
     x = x + 10;
     y = y + 10;
     bubble(x,y,o);
@@ -33,10 +30,8 @@ void draw()
   while (count<40)
   {
     o = 70;
-    Random rand4 = new Random();
-    int  x = rand4.nextInt(500) + 1;
-    Random rand5 = new Random();
-    int  y = rand5.nextInt(450) + 1;
+    int  x = (int)(Math.random()*500 + 1);
+    int  y = (int)(Math.random()*450 + 1);
     x = x + 10;
     y = y + 10;
     bubble(x,y,o);
